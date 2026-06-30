@@ -202,5 +202,16 @@ public ActionResult Details(int id)
 // Review Comment 5 : The Details and Delete actions trust the incoming raw integer id string directly from the URL route query parameters (/Enrollments/Details?id=123). There are no security boundary validations confirming if the currently logged-in user actually owns or has permission to view that specific record.
 // Fix : use [Authorize]
 
+// 4 Tests have been addded and they are runnning successfully, please check the results.docx for output. These test cases have been added for security testing which was mentioned in requirement
+
+// I have also attached Enrollment Dashboard UI, I have tried to cover maximum of Implementation with Best Practices and architectural Patterns. I am yet to finish whole implementation.
+
+// Please feel free to add review comments to improve this code base
+
+// Improvements which can be done in Future :
+1) avoid using query string mechanism which I have done ( Important Change)
+2) Use Authorization for login purpose
+3) Make use of Observability tools to maintain codebase
+4) Inclde Serilog, I have just referenced serilog but I have not implemented.
 
 ```
